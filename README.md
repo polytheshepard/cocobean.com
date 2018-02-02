@@ -1,1 +1,5 @@
-# website-mockup
+# Website-mockup
+
+## DISCLAIMER: ##
+
+The website is for non-commercial purposes and logo and images are respectively owned by KAFFE themselves.
