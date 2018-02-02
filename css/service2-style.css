@@ -1,0 +1,69 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Navigation bar stylign starts here */
+.navbar img {
+    width: 5%;
+    height: 5%;
+    display: inline-flex;
+    float: left;
+    margin: 10px auto 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+}
+
+#outline-text {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px #fff;
+    letter-spacing: -2px;
+}
+
+nav {
+   padding-bottom: 10px;
+   color: #fff;
+}
+
+.navbar {
+   overflow: hidden;
+   font-family: 'Signika', sans-serif;
+   border-bottom: 2px solid #000;
+   background-color: #cccac8;
+}
+
+.navbar a {
+   float: left;
+   color: #fff;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 30px;
+}
+
+.selection-container {
+    display: grid;
+}
+
+.selection-container > div:nth-child(2) {
+    margin-left: auto;
+}
+
+h2::before {
+    display: block;
+    content: "";
+    margin-top: -285px;
+    height: 285px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
