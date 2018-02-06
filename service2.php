@@ -44,48 +44,51 @@
             </ul>
         </div>
         <div class="container">
-            <div class="lunch">
-            <h2 id="lunch">Lunch</h2>
+            <div class="first-section">
+            <h2 id="first-heading">Lunch</h2>
             <img class="img-bg" src="../img/lunch-background.jpeg" alt="Image of chips for lunch on table">
             <div class="food-content">
                 <h2>Feta Cheese Salad</h2>
-                <img class="img-content" src="../img/feta-cheese-salad.jpeg" alt="">
+                <img class="img-content" src="../img/feta-cheese-salad.jpeg" alt="Image of a nice cool feta cheese salad">
                 <p>Price: $12</p>
             </div>
             <div class="food-content">
                 <h2>Chia Pudding</h2>
-                <img class="img-content" src="../img/chia-pudding.jpeg" alt="">
+                <img class="img-content" src="../img/chia-pudding.jpeg" alt="A bowl full of chia pudding with yogurt">
                 <p>Price: $13</p>
             </div>
             <div class="food-content">
                 <h2>Banana Crust</h2>
-                <img class="img-content" src="../img/banana-crust.jpeg" alt="">
+                <img class="img-content" src="../img/banana-crust.jpeg" alt="Image of toast topped with cherry tomatoes, boiled eggs and banana side dishes">
                 <p>Price: $10</p>
             </div>
             </div>
-            <div class="dinner">
+            <div class="second-section">
             <h2 id="dinner">Dinner</h2>
             <img class="img-bg" src="" alt="">
             <div class="food-content">
                 <h2>Grilled Chicken</h2>
-                <img class="img-content" src="../img/grilled-chicken.jpeg" alt="">
+                <img class="img-content" src="../img/grilled-chicken.jpeg" alt="Grilled chicken garnished with rocket leaves, lemon and spanish onion">
                 <p>Price: $13</p>
             </div>
             </div>
-            <div class="drinks">
+            <div class="third-section">
             <h2 id="dinner">Drinks</h2>
             <img class="img-bg" src="../img/" alt="">
             <div class="food-content">
                 <h2>Indigo Warrior</h2>
-                <img class="img-content" src="../img/indigo-warrior.jpeg" alt="">
+                <img class="img-content" src="../img/indigo-warrior.jpeg" alt="Berry smoothie blended with blueberries, strawberries and raspberries">
+                <p>Price: $8</p>
             </div>
             <div class="food-content">
                 <h2>Acai Smoothie</h2>
-                <img class="img-content" src="../img/acai-smoothie.jpeg" alt="">
+                <img class="img-content" src="../img/acai-smoothie.jpeg" alt="Smoothie jar mixed with chocolate goodness topped with nuts, acai berries, strawberries and kiwi">
+                <p>Price: $10</p>
             </div>
             <div class="food-content">
                 <h2>Watermelon Shake</h2>
-                <img class="img-content" src="../img/watermelon-shake.jpeg" alt="">
+                <img class="img-content" src="../img/watermelon-shake.jpeg" alt="Chilled watermelon smoothie blended in watermelon juice and ice">
+                <p>Price: $8</p>
             </div>
             </div>
         </div>

@@ -1,9 +1,12 @@
 html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #1b1b1b;
 }
 
-/*Navigation bar stylign starts here */
+/* Navigation bar styling starts here */
 .navbar img {
     width: 5%;
     height: 5%;
@@ -49,6 +52,10 @@ nav {
    font-size: 30px;
 }
 
+.navbar:hover {
+   opacity: 1;
+   color: #fff;
+}
 .selection-container {
     display: grid;
 }
@@ -66,4 +73,21 @@ h2::before {
     pointer-events: none;
 }
 
+.first-section, .second-section, .third-section {
+    display: grid;
+    grid-template-columns: 1fr repeat(4, minmax(auto, 10em)) 1fr;
+}
 
+.img-bg {
+    width: 100%;
+    height: 50%;
+}
+
+.img-content {
+    width: 100%;
+    height: 50%;
+}
+
+p {
+    font-size: 14px;
+}
