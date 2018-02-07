@@ -146,8 +146,14 @@ ul a {
 ul a:focus {
    color: #000;
 }
+
 .selection-container {
-    display: grid;
+    margin-bottom: 5em;
+}
+
+.selection-container > ul {
+    color: #cccac8;
+    margin-left: 2em;
 }
 
 .selection-container > div:nth-child(2) {
@@ -165,12 +171,50 @@ h2::before {
 
 .first-section, .second-section, .third-section {
     display: grid;
-    grid-template-columns: 1fr repeat(4, minmax(auto, 10em)) 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
 }
 
 .img-bg {
     width: 100%;
-    height: 50%;
+    height: 100%;
+}
+
+.banner {
+    min-height: 450px;
+}
+
+.banner #first-img {
+    background: #333 url('../img/lunch-background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.banner #second-img {
+    background: #333 url('../img/breakfast.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.banner #third-img {
+    background: #333 url('../img/choose-your-smoothie.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.7;
 }
 
 .img-content {
@@ -180,5 +224,6 @@ h2::before {
 
 p {
     font-family: 'Signika', sans-serif;
-    font-size: 14px;
+    font-size: 24px;
+    color: #fff;
 }
