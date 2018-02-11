@@ -24,12 +24,8 @@ html, body {
 nav {
    padding-bottom: 10px;
    color: #fff;
-}
-
-nav {
    overflow: hidden;
    font-family: 'Signika', sans-serif;
-   /* border-bottom: 1px solid #fff; */
 }
 
 nav ul {
@@ -47,12 +43,11 @@ nav ul:first-of-type {
 
 nav a {
     text-decoration: none;
-    color: #1b1b1b;
+    color: #fff;
 }
 
 nav:hover, nav:active {
-   opacity: 1;
-   color: #fff;
+   color: #9d6325;
 }
 
 nav:link, nav:visited {
@@ -60,9 +55,8 @@ nav:link, nav:visited {
 }
 
 nav:hover, nav a:hover, nav a:active {
-   color: #fff;
+   color: #9d6325;
    transition: 0.5s;
-   opacity: 1;
 }
 
 ul {
@@ -107,6 +101,7 @@ li {
     display: block;
     border-bottom: none;
     background: #999;
+    margin-bottom: 5em;
 }
 
 #logo-panel {
@@ -149,6 +144,7 @@ p {
     font-size: 25px;
     color: #383737;
 }
+
 p, ol {
     font-family: 'Signika', sans-serif;
 }

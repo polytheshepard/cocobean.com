@@ -8,33 +8,26 @@
 </head>
 <body>
     <header>
-        <!--logo and branding has been placed in nav-->
-    </header>
-    <nav>
-        <!--Note to self: will update menu image soon and add delivery services afterwards.-->
-    <div class="logo-panel">
-            <div class="navbar">
-                <img src="../img/kaffe-logo-nav.png" alt="The KAFFÉ logo is displayed with the navigation bar">
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                        <div class="dropdown">
-                             <button class="dropbtn">
-                                <li>Shop<i class="fa fa-sort-desc"></i></li>
-                             </button>
-                             <div class="dropdown-content">
-                                 <a href="products.php">Coffee</a>
-                                 <a href="products.php">Tea</a>
-                             </div>
-                        </div>
+        <nav id="main-nav">
+            <div id="logo-panel">
+                <img id="nav-logo" src="../img/kaffe-logo-nav.png" alt="The KAFFÉ logo is displayed with the navigation bar">
+	                <ul>
+	                    <li><a href="index.php">Home</a></li>
+                        <li><a href="products.php">Shop<i class="fa fa-sort-desc"></i></a>
+                            <ul>
+                                <li><a href="products.php">Coffee</a></li>
+                                <li><a href="products.php">Tea</a></li>
+                            </ul>
+                        </li>
                         <li><a href="login.php">Login</a></li>
-                        <li><a href="service.php">Bookings</a></li>
-                        <li><a href="#">Menu</a></li>
-                        <li><a href="#">Delivery</a></li>
+	                    <li><a href="service.php">Bookings</a></li>
+	                    <li><a href="#">Menu</a></li>
+                        <li><a href="service2.php">Delivery</a></li>
                         <li><a href="#">Contact</a></li>
-                </ul>
+                    </ul>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     <main>
         <a href="products.php"><input type="button" class="return-button" value="Return"></a>
         <h2>English Breakfast</h2>
