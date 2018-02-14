@@ -29,7 +29,7 @@ nav ul {
    padding: 30px;
    text-decoration: none;
    font-size: 30px;
-   margin-bottom: 5em;
+   margin-bottom: 2em;
    width: 100%;
    background: #cccac8;
 }
@@ -102,7 +102,6 @@ li {
 
 /* Navigation bar styling ends here*/
 
-
 h1 {
     font-family: 'Montserrat', sans-serif;
     color: #fff;
@@ -110,19 +109,57 @@ h1 {
     text-align: center;
 }
 
-h2 {
-    font-family: 'Signika', sans-serif;
+#outline-text {
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 2px white;
+    letter-spacing: -2px;
+}
+
+.selection-container {
+    background: #912828;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+ /* Specifying anchor links for lunch, dinner and drinks */
+
+.selection-container > ul > div > li > a {
+    display: inline;
     color: #fff;
-    font-size: 20px;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.selection-container > ul > div:nth-of-type(odd) {
+    background: #801920;
+    width: 500px;
+}
+
+.selection-container > ul > div > li > a:hover {
+    color: #1b1b1b;
+}
+
+#first-heading, #second-heading, #third-heading {
+    position: absolute;
+    font-size: 10em;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px #000;
+    position: absolute;
+    margin: 80px 15px;
+    z-index: 1;
+    font-weight: 500;
 }
 
 .selection-container {
     margin-bottom: 5em;
-}
-
-.selection-container > ul {
-    color: #cccac8;
-    margin-left: 2em;
 }
 
 .selection-container > div:nth-child(2) {
@@ -141,7 +178,8 @@ h2::before {
 .first-section, .second-section, .third-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 10px;
+    grid-gap: 20px;
+    margin: 20px;
 }
 
 .img-bg {
@@ -162,6 +200,8 @@ h2::before {
     height: 450px;
     z-index: -1;
     opacity: 0.7;
+    overflow: hidden;
+    margin: 5em 0 5em;
 }
 
 .banner #second-img {
@@ -173,6 +213,8 @@ h2::before {
     height: 450px;
     z-index: -1;
     opacity: 0.7;
+    overflow: hidden;
+    margin: 5em 0 5em;
 }
 
 .banner #third-img {
@@ -184,15 +226,33 @@ h2::before {
     height: 450px;
     z-index: -1;
     opacity: 0.7;
+    overflow: hidden;
+    margin: 5em 0 5em;
 }
 
 .img-content {
     width: 100%;
-    height: 50%;
+    height: 300px;
+}
+
+.food-content {
+    background: #cccac8;
 }
 
 p {
     font-family: 'Signika', sans-serif;
     font-size: 24px;
-    color: #fff;
+    color: #1b1b1b;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px)  {
+    .img-content {
+        width: 100%;
+        height: 250px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
 }

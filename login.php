@@ -1,4 +1,5 @@
 <?php
+    session_start();
     //initialising variables
     $email = "";
     $password = "";
@@ -27,6 +28,7 @@
 	                <li><a href="service.php">Bookings</a></li>
 	                <li><a href="#">Menu</a></li>
                     <li><a href="service2.php">Delivery</a></li>
+                    <li><a href="cart.php">Cart</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
          </nav>

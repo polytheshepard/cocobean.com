@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,6 +27,7 @@
 	                    <li><a href="service.php">Bookings</a></li>
 	                    <li><a href="#">Menu</a></li>
                         <li><a href="service2.php">Delivery</a></li>
+                        <li><a href="cart.php">Cart</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
                     <img id="main-logo" src="../img/kaffe-logo-revamped.png" alt="The KAFFÉ logo">
@@ -45,7 +49,7 @@
         </div>
     </main>
     <footer>
-    © COPYRIGHT Katies Truong s3671053 2018
+        Katies Truong s3671053 2018
     </footer>
 </body>
 </html>

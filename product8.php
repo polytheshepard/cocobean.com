@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,6 +25,7 @@
 	                <li><a href="service.php">Bookings</a></li>
 	                <li><a href="#">Menu</a></li>
                     <li><a href="service2.php">Delivery</a></li>
+                    <li><a href="cart.php">Cart</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
          </nav>
@@ -32,7 +36,7 @@
         <img src="../img/africano.png" alt="Image of Africano coffee beans" class="image">
         <div class="product-container">
             <p>Price: $14</p>
-            <p class="product-description">Wet pressed from Uganda, they consist of dark and rich aromas satisfying a stronger taste for coffee lovers.</p>
+            <p class="product-description">Wet pressed from Uganda, these beans consist of dark and rich aromas satisfying a stronger taste for coffee lovers.</p>
             <p><strong>Aroma:</strong> Rich and bitter</p>
             <p><strong>Roast:</strong> Medium and Dark</p>
             <div class="coffee-bar">

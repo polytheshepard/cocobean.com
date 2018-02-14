@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,6 +25,7 @@
 	                <li><a href="service.php">Bookings</a></li>
 	                <li><a href="#">Menu</a></li>
                     <li><a href="service2.php">Delivery</a></li>
+                    <li><a href="cart.php">Cart</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
          </nav>
@@ -32,7 +36,7 @@
         <img src="../img/columbia.png" alt="Image of a Columbian coffee beans" class="image">
         <div class="product-container">
             <p>Price: $15</p>
-            <p class="product-description">Residing from Columbia, this particular blend is mixed in a citrus-like flavour with a fruity tone with the coffee bean oils.</p>
+            <p class="product-description">Residing from Columbia, this particular blend is mixed in a citrus-like flavour with a fruity tone with coffee bean oils.</p>
             <p><strong>Aroma:</strong> Sweet caramel, cocoa</p>
             <p><strong>Roast:</strong> Medium</p>
             <div class="coffee-bar">

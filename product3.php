@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,6 +25,7 @@
 	                <li><a href="service.php">Bookings</a></li>
 	                <li><a href="#">Menu</a></li>
                     <li><a href="service2.php">Delivery</a></li>
+                    <li><a href="cart.php">Cart</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
          </nav>
@@ -32,7 +36,7 @@
         <img src="../img/chai-tea.png" alt="Chai Tea container" class="image">
         <div class="product-container">
             <p>Price: $12</p>
-            <p class="product-description">Commonly known as masala chai that is black tea mixed with aromatic Indian spices and herbs. </p>
+            <p class="product-description">Commonly known as masala chai, it is black tea mixed with aromatic Indian spices and herbs. </p>
             <p><strong>Caffeine Level:</strong> Moderate</p>
             <div class="caffeine-bar">
                 <div class="filled-caffeine-moderate">
