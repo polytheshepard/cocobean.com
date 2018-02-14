@@ -47,7 +47,7 @@
             <p><strong>Body:</strong> Smooth<p>
             <p><strong>Flavour:</strong> Fruity, Nutty, Citrus-like</p>
             <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post">
-            <input type="hidden" name="id" value="p7">
+            <input type="hidden" name="pid" value="p7">
             <div class="coffee-options">
                 <label> Size
                 <select name="option" class="size">
@@ -58,7 +58,7 @@
             </div>
             <div class="quantity-box">
                 <input type="button" class="decrease" name="qty" value="-" onclick="minus()">
-                <input type="text" class="product-amount" id="p1" name="qty" value="0" min="0">
+                <input type="number" class="product-amount" id="pid" name="qty" value="0" min="0">
                 <input type="button" class="increase" name="qty" value="+" onclick="plus()">
             </div>
             <input type="submit" class="add-button" value="Add">

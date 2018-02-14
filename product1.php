@@ -1,8 +1,7 @@
 <?php
     session_start();
 
-
-    $product_list = ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9'];
+    $product_list = ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9']; 
     define(PID, $_GET['pid']);
 
     // if not valid product
@@ -121,6 +120,20 @@
         )    
     );
 
+    if (!isset($_SESSION['productTree'])) {
+        $fp = fopen('products.csv', "r");
+        flock($fp, LOCK_SH);
+        $headings = fgetcsv($fp);
+        while($readALine = fgetcsv($fp)) {
+            $count = count($readALine);
+            for($i=2; $i<$count;$i++) {
+                $_SESSION['productTree'][$readALine[0]][$readALine[1]][$headings[$i]]=$readALine[$i];
+            }
+        }
+        flock($fp, LOCK_UN);
+        fclose($fp);
+    }
+
     // set and add into cart
     if (isset($_POST["add-item"])) {
         $_SESSION['cart']=$_POST;
@@ -129,6 +142,7 @@
     } else if (isset($_POST["remove-item"])) {
         unset ($_SESSION['cart']);
     }
+    
 ?>
 <!DOCTYPE html>
 <html>
@@ -136,7 +150,7 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, inital-scale=1">
     <title>Product</title>
     <link rel="stylesheet" type="text/css" href="product-style.css">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:300|Signika" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:300|Signika" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -188,10 +202,12 @@
             </div>
             <div class="quantity-box">
                 <input type="button" class="decrease" name="qty" value="-" onclick="minus()">
-                <input type="text" class="product-amount" id="p1" name="<?php echo PID.'-qty'?>" value="0" min="0">
+                <input type="number" class="product-amount" id="pid" name="<?php echo PID.'-qty'?>" value="0" min="0">
                 <input type="button" class="increase" name="qty" value="+" onclick="plus()">
             </div>
             <input type="submit" name="add-item" class="add-button" value="Add">
+            <p><strong>Subtotal<strong><p>
+                <span class="subtotal-result"></span>
             </form>
         </div>
     </main>
@@ -201,6 +217,8 @@
         include_once("/home/eh1/e54061/public_html/wp/debug.php");
     ?>
 </body>
+<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>  
 <script src="calculate.js"></script>
+<script src="update-cost.js"></script>
 </html>
 

@@ -45,7 +45,7 @@
             </div>
             <p><strong>Caffeine:</strong> 50mg/per 236ml</p>
             <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post">
-            <input type="hidden" name="id" value="p3">
+            <input type="hidden" name="pid" value="p3">
             <div class="tea-options">
                 <label> Leaves type
                 <select name="option" class="tea-box">
@@ -57,7 +57,7 @@
             </div>
             <div class="quantity-box">
                 <input type="button" class="decrease" name="qty" value="-" onclick="minus()">
-                <input type="text" class="product-amount" id="p1" name="qty" value="0" min="0">
+                <input type="number" class="product-amount" id="pid" name="qty" value="0" min="0">
                 <input type="button" class="increase" name="qty" value="+" onclick="plus()">
             </div>
             <input type="submit" class="add-button" value="Add">
@@ -68,5 +68,6 @@
     </footer>
 </body>
 <script src="calculate.js"></script>
+<script src="update-cost.js"></script>
 </html>
 
