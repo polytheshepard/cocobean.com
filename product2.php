@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include_once("/home/eh1/e54061/public_html/wp/debug.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,7 +37,7 @@
         <img src="../img/earl-grey.png" alt="Earl Grey container" class="image">
         <div class="product-container">
             <p>Price: $10</p>
-            <p class="product-description">Black tea that is enriched with the oils from the bergamot orange rind. </p>
+            <p class="product-description">Black tea that is enriched with the oils from the bergamot orange rind.</p>
             <p><strong>Caffeine Level:</strong> Moderate</p>
             <div class="caffeine-bar">
                 <div class="filled-caffeine-moderate">

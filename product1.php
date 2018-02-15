@@ -1,6 +1,134 @@
 <?php
     session_start();
 
+
+    $product_list = ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9'];
+    define(PID, $_GET['pid']);
+
+    // if not valid product
+    if (!isset ($_GET['pid']) || !in_array(PID, $product_list, true)) {
+        header('Location: products.php');
+    }
+   
+    // set an array
+    $productTree = array (
+        'p1' => array (
+            'productTitle' => 'English Breakfast',
+            'imageSource' => '../img/english-breakfast.png',
+            'imageAlt' => 'Earl Grey container',
+            'productDescription' => 'One of the most popular tea blends, most commonly as British tea. Its robust and rich black tea leaves
+            works well with milk and sugar.',
+            'price' => 10,
+            'options' => array (
+                'tea1' => 'Black',
+                'tea2' => 'Green',
+                'tea3' => 'White'
+            )
+        ),
+        'p2' => array (
+            'productTitle' => 'Earl Grey',
+            'imageSource' => '../img/earl-grey.png',
+            'imageAlt' => 'Earl Grey container',
+            'productDescription' => 'Black tea that is enriched with the oils from the bergamot orange rind.',
+            'price' => 10,
+            'options' => array (
+                'tea1' => 'Black',
+                'tea2' => 'Green',
+                'tea3' => 'White'
+            )
+        ),
+        'p3' => array (
+            'productTitle' => 'Chai Tea',
+            'imageSource' => '../img/chai-tea.png',
+            'imageAlt' => 'Chai Tea container',
+            'productDescription' => 'Commonly known as masala chai, it is black tea mixed with aromatic Indian spices and herbs.',
+            'price' => 12,
+            'options' => array (
+                'tea1' => 'Black',
+                'tea2' => 'Green',
+                'tea3' => 'White'
+            )
+        ),
+        'p4' => array (
+            'productTitle' => 'Oolong',
+            'imageSource' => '../img/oolong.png',
+            'imageAlt' => 'Oolong Tea goodness!',
+            'productDescription' => 'Traditional Chinese tea that is oxidised from sun heat. It consists both of green and black tea leaves giving life-long health benefits.',
+            'price' => 12,
+            'options' => array (
+                'tea1' => 'Black',
+                'tea2' => 'Green',
+                'tea3' => 'White'
+            )
+        ),
+        'p5' => array (
+            'productTitle' => 'Darjeeling',
+            'imageSource' => '../img/darjeeling.png',
+            'imageAlt' => 'Darjeeling tea container',
+            'productDescription' => 'Darjeeling resides in the northern region of India. Famously known as "The Champagne Tea", 
+            it consists of a combination of green, white and black tea leaves
+            giving an exquisite taste.',
+            'price' => 14,
+            'options' => array (
+                'tea1' => 'Black',
+                'tea2' => 'Green',
+                'tea3' => 'White'
+            )
+        ),
+        'p6' => array (
+            'productTitle' => 'Espresso Blend',
+            'imageSource' => '../img/espresso-blend.png',
+            'imageAlt' => 'Image of Espresso blend coffee beans',
+            'productDescription' => 'A flavoursome and nutty taste that comes as a common specialty for coffee artistry. This Espresso blend is specifically sourced from Central America.',
+            'price' => 13,
+            'options' => array (
+                'co1' => 500,
+                'co2' => 1000
+            )
+        ),
+        'p7' => array (
+            'productTitle' => 'Espresso Blend',
+            'imageSource' => '../img/espresso-blend.png',
+            'imageAlt' => 'Image of Espresso blend coffee beans',
+            'productDescription' => 'A flavoursome and nutty taste that comes as a common specialty for coffee artistry. This Espresso blend is specifically sourced from Central America.',
+            'price' => 13,
+            'options' => array (
+                'co1' => 500,
+                'co2' => 1000
+            )
+        ),
+        'p8' => array (
+            'productTitle' => 'Africano',
+            'imageSource' => '../img/africano.png',
+            'imageAlt' => 'Image of Africano coffee beans',
+            'productDescription' => 'Wet pressed from Uganda, these beans consist of dark and rich aromas satisfying a stronger taste for coffee lovers.',
+            'price' => 14,
+            'options' => array (
+                'co1' => 500,
+                'co2' => 1000
+            )
+        ),
+        'p9' => array (
+            'productTitle' => 'Fairtrade',
+            'imageSource' => '../img/fairtrade.png',
+            'imageAlt' => 'Image of Fairtrade coffee beans',
+            'productDescription' => 'Organically sourced from Peru, the ideal flavour is grown in the high altitudes of Peru. It has a softer flavour and a gentler body giving its nutty flavour in its beans.',
+            'price' => 15,
+            'options' => array (
+                'co1' => 500,
+                'co2' => 1000
+            )
+        )    
+    );
+
+    // set and add into cart
+    if (isset($_POST["add-item"])) {
+        $_SESSION['cart']=$_POST;
+    } else if (isset($_POST["edit-item"])) {
+        $_SESSION['cart'][]=$_POST;
+    } else if (isset($_POST["remove-item"])) {
+        unset ($_SESSION['cart']);
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -35,41 +163,43 @@
     </header>
     <main>
         <a href="products.php"><input type="button" class="return-button" value="Return"></a>
-        <h2>English Breakfast</h2>
-        <img src="../img/english-breakfast.png" alt="Earl Grey container" class="image">
+        <h2><?php echo $productTree[PID]['productTitle']; ?></h2>
+        <img src="<?php echo $productTree[PID]['imageSource']; ?>" alt="imageAlt" class="image">
         <div class="product-container">
-            <p>Price: $10</p>
-            <p class="product-description">One of the most popular tea blends, most commonly as British tea. Its robust and rich black tea leaves
-            works well with milk and sugar. </p>
+            <p>Price: <?php echo " \${$productTree[PID]['price']}"; ?></p>
+            <p class="product-description"><?php echo $productTree[PID]['productDescription']; ?></p>
+            <p><strong>Caffeine:</strong> 42mg/per 236ml</p>
+            <br>
             <p><strong>Caffeine Level:</strong> Moderate</p>
-            <!--Note to self: Update bar to make it visually intuitive possible remove above text and push to bar level-->
             <div class="caffeine-bar">
                 <div class="filled-caffeine-moderate">
                 </div>
             </div>
-            <p><strong>Caffeine:</strong> 42mg/per 236ml</p>
             <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post">
             <input type="hidden" name="id" value="p1">
             <div class="tea-options">
                 <label> Leaves type
-                <select name="option" class="tea-box">
-                    <option value="black">Black</option>
-                    <option value="green">Green</option>
-                    <option value="white">White</option>
+                <select name="<?php echo PID.'-opt'?>"][options] class="tea-box">
+                    <option value="black"><?php echo $productTree[PID]['options']['tea1']; ?></option>
+                    <option value="green"><?php echo $productTree[PID]['options']['tea2']; ?></option>
+                    <option value="white"><?php echo $productTree[PID]['options']['tea3']; ?></option>
                 </select>
                 </label>
             </div>
             <div class="quantity-box">
                 <input type="button" class="decrease" name="qty" value="-" onclick="minus()">
-                <input type="text" class="product-amount" id="p1" name="qty" value="0" min="0">
+                <input type="text" class="product-amount" id="p1" name="<?php echo PID.'-qty'?>" value="0" min="0">
                 <input type="button" class="increase" name="qty" value="+" onclick="plus()">
             </div>
-            <input type="submit" class="add-button" value="Add">
+            <input type="submit" name="add-item" class="add-button" value="Add">
             </form>
         </div>
     </main>
     <footer>
     </footer>
+    <?php
+        include_once("/home/eh1/e54061/public_html/wp/debug.php");
+    ?>
 </body>
 <script src="calculate.js"></script>
 </html>

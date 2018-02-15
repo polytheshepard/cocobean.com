@@ -1,7 +1,6 @@
 <?php
-    //initialising variables
-    $email = "";
-    $password = "";
+    session_start();
+    include_once("/home/eh1/e54061/public_html/wp/debug.php");
 ?>
 <!DOCTYPE html>
 <html>

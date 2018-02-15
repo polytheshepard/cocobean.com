@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include_once("/home/eh1/e54061/public_html/wp/debug.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,7 +34,7 @@
     <main>
         <a href="products.php"><input type="button" class="return-button" value="Return"></a>
         <h2>Darjeeling</h2>
-        <img src="../img/darjeeling.png" alt="Have some Darjeeling" class="image">
+        <img src="../img/darjeeling.png" alt="Darjeeling tea container" class="image">
         <div class="product-container">
             <p>Price: $14</p>
             <p class="product-description">Darjeeling resides in the northern region of India. Famously known as "The Champagne Tea", 

@@ -1,5 +1,23 @@
 <?php
     session_start();
+    include_once("/home/eh1/e54061/public_html/wp/debug.php");
+
+    if (isset($_POST['add'], $_POST['id'], $_POST['qty'], $_POST['option'])) {
+        // server side code is require here to check if
+        // - qty is a positive integer (ie 1 or more)
+        if (qty >= 1) {
+
+        // - product/service id is valid
+        } else if (id ) && service {
+
+        // - product/service option is valid
+        } else if (option is valid) {
+            
+        }
+        $SESSION['cart'][$_POST['id']]['qty'] = $_POST['qty'];
+        // repeat to add the valid option
+        header("Location: cart.php");
+    }
 ?>
 <!DOCTYPE html>
 <html>

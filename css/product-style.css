@@ -9,8 +9,7 @@ body {
 }
 /*Navigation bar stylign starts here */
 #nav-logo {
-    width: 7%;
-    height: 7%;
+    width: 10%;
     display: inline-flex;
     float: left;
     margin: 10px auto 20px;
@@ -118,7 +117,6 @@ li {
 
 img {
     width: 20%;
-    height: 20%;
     margin-left: 100px;
 }
 
@@ -230,7 +228,6 @@ p::-moz-selection {
     color: #fff;
     margin-left: 100px;
     margin-bottom: 30px;
-    box-sizing: border-box;
     float: left;
 }
 
@@ -241,7 +238,6 @@ p::-moz-selection {
     font-family: 'Signika', sans-serif;
     font-size: 18px;
     margin-left: 10px;
-    
 }
 
 .add-button {
@@ -261,13 +257,13 @@ p::-moz-selection {
 }
 
 /* Formatting Bar for coffee and tea levels*/
-
 .caffeine-bar, .coffee-bar {
     width: 50%;
     background-color: #cccac8;
     height: 30px;
     float: left;
     margin-left: 100px;
+    margin-bottom: 20px;
 }
 
 .filled-caffeine-moderate, .filled-medium {
