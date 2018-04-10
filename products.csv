@@ -1,24 +1,24 @@
-PID,OID,Option Description,Title,Product Description,Price
-p1,enOp1,Black tea leaves.,Black,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,10
-p1,enOp2,Green tea leaves.,Green,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,10
-p1,enOp3,White tea leaves.,White,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,10
-p2,eaOp1,Black tea leaves.,Black,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,10
-p2,eaOp2,Green tea leaves.,Green,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,10
-p2,eaOp3,White tea leaves.,White,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,10
-p3,chOp1,Black tea leaves.,Black,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,12
-p3,chOp2,Green tea leaves.,Green,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,12
-p3,chOp3,White tea leaves.,White,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,12
-p4,ooOp1,Black tea leaves.,Black,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,12
-p4,ooOp2,Green tea leaves.,Green,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,12
-p4,ooOp3,White tea leaves.,White,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,12
-p5,daOp1,Black tea leaves.,Black,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,14
-p5,daOp2,Green tea leaves.,Green,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,14
-p5,daOp3,White tea leaves.,White,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,14
-p6,esOp1,A bag of 500g of coffee roast.,500g,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,13
-p6,esOp2,A bag of 1kg of coffee roast.,1kg,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,26
-p7,colOp1,A bag of 500g of coffee roast.,500g,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,15
-p7,colOp2,A bag of 1kg of coffee roast.,1kg,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,28.5
-p8,afOp1,A bag of 500g of coffee roast.,500g,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,14
-p8,afOp2,A bag of 1kg of coffee roast.,1kg,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,28
-p9,faOp1,A bag of 500g of coffee roast.,500g,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,15
-p9,faOp2,A bag of 1kg of coffee roast.,1kg,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,28.5
+PID,OID,Option Description,Title,Product Title,Product Description,Image,,Price
+p1,enOp1,Black tea leaves.,Black,English Breakfast,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,../img/black.jpeg,,10
+p1,enOp2,Green tea leaves.,Green,English Breakfast,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,../img/green.jpeg,,10
+p1,enOp3,White tea leaves.,White,English Breakfast,<p>One of the most popular tea blends. most commonly as British tea. Its robust and rich black tea leaves works well with milk and sugar.</p>,../img/white.jpeg,,10
+p2,eaOp1,Black tea leaves.,Black,Earl Grey,<p>Black tea that is enriched with the oils from the bergamot orange rind.</p>,../img/black.jpeg,,10
+p2,eaOp2,Green tea leaves.,Green,Earl Grey,<p>Black tea that is enriched with the oils from the bergamot orange rind.</p>,../img/green.jpeg,,10
+p2,eaOp3,White tea leaves.,White,Earl Grey,<p>Black tea that is enriched with the oils from the bergamot orange rind.</p>,../img/white.jpeg,,10
+p3,chOp1,Black tea leaves.,Black,Chai Tea,<p>Commonly known as masala chai. It is black tea mixed with aromatic Indian spices and herbs.</p>,../img/black.jpeg,,12
+p3,chOp2,Green tea leaves.,Green,Chai Tea,<p>Commonly known as masala chai. It is black tea mixed with aromatic Indian spices and herbs.</p>,../img/green.jpeg,,12
+p3,chOp3,White tea leaves.,White,Chai Tea,<p>Commonly known as masala chai. It is black tea mixed with aromatic Indian spices and herbs.</p>,../img/white.jpeg,,12
+p4,ooOp1,Black tea leaves.,Black,Oolong,<p>Traditional Chinese tea that is oxidised from sun heat. It consists both of green and black tea leaves giving life-long health benefits.</p>,../img/black.jpeg,,12
+p4,ooOp2,Green tea leaves.,Green,Oolong,<p>Traditional Chinese tea that is oxidised from sun heat. It consists both of green and black tea leaves giving life-long health benefits.</p>,../img/green.jpeg,,12
+p4,ooOp3,White tea leaves.,White,Oolong,<p>Traditional Chinese tea that is oxidised from sun heat. It consists both of green and black tea leaves giving life-long health benefits.</p>,../img/white.jpeg,,12
+p5,daOp1,Black tea leaves.,Black,Darjeeling,<p>Darjeeling resides in the northern region of India. Famously known as ‘The Champagne Tea’ it gives an exquisite taste.</p>,../img/black.jpeg,,14
+p5,daOp2,Green tea leaves.,Green,Darjeeling,<p>Darjeeling resides in the northern region of India. Famously known as ‘The Champagne Tea’ it gives an exquisite taste.</p>,../img/green.jpeg,,14
+p5,daOp3,White tea leaves.,White,Darjeeling,<p>Darjeeling resides in the northern region of India. Famously known as ‘The Champagne Tea’ it gives an exquisite taste.</p>,../img/white.jpeg,,14
+p6,esOp1,A bag of 500g of coffee roast.,500g,Espresso Blend,<p>A flavoursome and nutty taste that comes as a common specialty for coffee artistry. This Espresso blend is specifically sourced from Central America.</p>,../img/espresso-blend.png,,13
+p6,esOp2,A bag of 1kg of coffee roast.,1kg,Espresso Blend,<p>A flavoursome and nutty taste that comes as a common specialty for coffee artistry. This Espresso blend is specifically sourced from Central America.</p>,../img/espresso-blend.png,,26
+p7,colOp1,A bag of 500g of coffee roast.,500g,Colmbian,<p>Residing from Columbia this particular blend is mixed in a citrus-like flavour with a fruity tone with coffee bean oils.</p>,../img/columbia.png,,15
+p7,colOp2,A bag of 1kg of coffee roast.,1kg,Colmbian,<p>Residing from Columbia this particular blend is mixed in a citrus-like flavour with a fruity tone with coffee bean oils.</p>,../img/columbia.png,,28.5
+p8,afOp1,A bag of 500g of coffee roast.,500g,Africano,<p>Wet pressed from Uganda these beans consist of dark and rich aromas satisfying a stronger taste for coffee lovers.</p>,../img/africano.png,,14
+p8,afOp2,A bag of 1kg of coffee roast.,1kg,Africano,<p>Wet pressed from Uganda these beans consist of dark and rich aromas satisfying a stronger taste for coffee lovers.</p>,../img/africano.png,,28
+p9,faOp1,A bag of 500g of coffee roast.,500g,Fairtrade,<p>Organically sourced from Peru the ideal flavour is grown in the high altitudes of Peru. It has a softer flavour and a gentler body giving its nutty flavour in its beans.</p>,../img/fairtrade.png,,15
+p9,faOp2,A bag of 1kg of coffee roast.,1kg,Fairtrade,<p>Organically sourced from Peru the ideal flavour is grown in the high altitudes of Peru. It has a softer flavour and a gentler body giving its nutty flavour in its beans.</p>,../img/fairtrade.png,,28.5

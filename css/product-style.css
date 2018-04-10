@@ -17,19 +17,6 @@ body {
     margin-right: 2em;
 }
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    font-size: 50px;
-}
-
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    color: #fff;
-    margin-left: 100px;
-}
-
 nav {
    padding-bottom: 10px;
    color: #fff;
@@ -115,6 +102,22 @@ li {
 
 /* Navigation bar styling ends here*/
 
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    margin-left: 100px;
+    text-shadow: 2px 2px 2px #000;
+    clear: both;
+}
+
+
 img {
     width: 20%;
     margin-left: 100px;
@@ -199,7 +202,7 @@ p::-moz-selection {
 }
 
 .product-amount {
-    width: 30px;
+    width: 40px;
     height: 50px;
     background-color: transparent;
     border: none;
@@ -213,8 +216,6 @@ p::-moz-selection {
     display: inline-block;
     border: 2px solid #580505;
     border-radius: 2px;
-    height: 50px;
-    line-height: 50px;
     margin-left: 100px;
     box-sizing: border-box;
     float: left;
@@ -226,7 +227,6 @@ p::-moz-selection {
     font-family: 'Signika', sans-serif;
     font-size: 18px;
     color: #fff;
-    margin-left: 100px;
     margin-bottom: 30px;
     float: left;
 }
@@ -282,4 +282,25 @@ p::-moz-selection {
     width: 75%;
     height: 30px;
     background-color: #580505;
+}
+
+span#subtotal-result {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    margin-left: 100px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+footer {
+    padding: 100px;
+    font-family: 'Signika', sans-serif;
+    background-color: #1b1b1b;
+    color: #fff;
+    clear: both;
+    font-size: 20px;
+}
+
+footer > a {
+    color: #9d6325;
 }

@@ -37,12 +37,12 @@
     </header>
     <!--Note to self: will update menu image soon and add delivery services afterwards. Will separate coffee and tea shop when A3 comes along to products1.php and products2.php-->
     <main>
-        <h1>Welcome to KAFFÉ</h1>
+        <h1>Welcome to KAFFE</h1>
         <div id="main-info">
-            <p>KAFFÉ is a specialty coffee shop serving the best urban dishes along the Boulevarde. We roast the highest quality beans ranging from Columbia, Africa and eco-friendly coffee.</p>
+            <p>KAFFE is a specialty coffee shop serving the best urban dishes along the Boulevarde. We roast the highest quality beans ranging from Columbia, Africa and eco-friendly coffee.</p>
             <p>We take special care of our coffee beans enriching the darkest aromas served with the palette to your warming dishes.</p>
             <p>Our purpose is to entrust meaning to our customer's love for coffee artistry. We value the environment as much as you do, as one of our biggest trademark
-               we've decided to go through the sustainable road. As part of our ethos, for every coffee cup you buy at KAFFÉ, 50 cents will go to a community fundraising campaign.</p>
+               we've decided to go through the sustainable road. As part of our ethos, for every coffee cup you buy at KAFFE, 50 cents will go to a community fundraising campaign.</p>
             <p>Feel free to look at our special handcrafted coffee and tea blends in our shop today.</p>
         </div>
         <a href="products.php"><input id="browse-button" type="button" value="Browse shop"></a>

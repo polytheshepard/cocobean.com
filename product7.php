@@ -1,6 +1,43 @@
+<!--Note Coffee products are not included within the cart array, the tea products are the only items so far that are processed 
+and only applies for the first element, black tea -->
 <?php
     session_start();
-    include_once("/home/eh1/e54061/public_html/wp/debug.php");
+    define(PID, $_GET['pid']);
+    $valid_products = ['p1', 'p2', 'p3', 'p4', 'p5', 'p6', 'p7', 'p8', 'p9'];
+
+    // return back to main page when pid or valid products are invalid from url
+    if (!isset ($_GET['pid']) || !in_array(PID,$valid_products, true)) {
+        header('Location: products.php');
+    }
+
+    // Processing to cart storage
+    if (isset ($_POST['pid'])) {
+        if(in_array($_POST['pid'],$valid_products, true)) {
+            $_SESSION['cart'][$_POST['pid']][$_POST['oid']]=$_POST['qty'];
+            header('Location: cart.php'); // send user off to cart when purchasing
+        } else {
+            header('Location: products.php');
+        }
+    } 
+
+    if(!isset($_SESSION['productTree'])) {
+        $fp = fopen('products.csv', "r");
+        flock($fp, LOCK_SH);
+        $headings = fgetcsv($fp);
+        while ($tryReadALine = fgetcsv($fp)) {
+            // preShow($tryReadALine);
+            $count = count($tryReadALine);
+            for ($i=2;$i<$count;$i++) {
+                $_SESSION['productTree'][$tryReadALine[0]][$tryReadALine[1]][$headings[$i]] = $tryReadALine[$i]; 
+            }
+        }
+            flock($fp, LOCK_UN);
+            fclose($fp);
+
+
+        // preShow($headings);
+    }
+    // preShow($_SESSION['productTree']);
 ?>
 <!DOCTYPE html>
 <html>
@@ -66,7 +103,14 @@
         </div>
     </main>
     <footer>
+        <hr>
+        Katies Truong s3671053
+        <a href="products.csv">Products Spreadsheet</a>
     </footer>
+    <?php
+        include_once("/home/eh1/e54061/public_html/wp/debug.php");
+    ?>
 </body>
 <script src="calculate.js"></script>
+<script src="subtotal.js"></script>
 </html>

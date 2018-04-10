@@ -2,6 +2,7 @@
     session_start();
     include_once("/home/eh1/e54061/public_html/wp/debug.php");
 ?>
+<!--This webpage is incomplete and is only seen as a markup-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -159,4 +160,8 @@
         </div>
     </main>
 </body>
+<footer>
+    <hr>
+    Katies Truong s3671053 2018
+</footer>
 </html>

@@ -1,6 +1,7 @@
+<!--Note Coffee products are not included within the cart array, the tea products are the only items so far that are processed 
+and only applies for the first element, black tea -->
 <?php
     session_start();
-    include_once("/home/eh1/e54061/public_html/wp/debug.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,16 +34,12 @@
     </header>
     <main>
         <h1>Shop</h1>
-        <!-- <select name="option">
-            <option value="price"></option>
-            <option value=""></option>
-        </select> -->
         <!--Coffee Blends-->
         <div class="item-list">
           <div class="item">
               <div class="image-container">
                   <img src="../img/espresso-blend.png" alt="Image of Espresso blend coffee beans" class="image">
-                  <a href="product6.php"><span class="overlay">
+                  <a href="product6.php?pid=p6"><span class="overlay">
                       <span class="text">View</span>
                     </span>
                   </a>
@@ -57,7 +54,7 @@
           <div class="item">
               <div class="image-container">
                   <img src="../img/columbia.png" alt="Image of a Columbian coffee beans" class="image">
-                  <a href="product7.php"><span class="overlay">
+                  <a href="product7.php?pid=p7"><span class="overlay">
                       <span class="text">View</span>
                     </span>
                   </a>
@@ -71,7 +68,7 @@
           <div class="item">
               <div class="image-container">
                   <img src="../img/africano.png" alt="Image of Africano coffee beans" class="image">
-                  <a href="product8.php"><span class="overlay">
+                  <a href="product8.php?pid=p8"><span class="overlay">
                       <span class="text">View</span>
                     </span>
                   </a>
@@ -85,7 +82,7 @@
           <div class="item">
               <div class="image-container">
                   <img src="../img/fairtrade.png" alt="Image of Fairtrade coffee beans" class="image">
-                  <a href="product9.php"><span class="overlay">
+                  <a href="product9.php?pid=p9"><span class="overlay">
                       <span class="text">View</span>
                     </span>
                   </a>
@@ -101,7 +98,7 @@
             <div class="item">
                 <div class="image-container">
                     <img src="../img/earl-grey.png" alt="Earl Grey container" class="image">
-                    <a href="product2.php"><span class="overlay">
+                    <a href="product2.php?pid=p2"><span class="overlay">
                         <span class="text">View</span>
                       </span>
                     </a>
@@ -115,7 +112,7 @@
             <div class="item">
                 <div class="image-container">
                     <img src="../img/english-breakfast.png" alt="English Breakfast container" class="image">
-                    <a href="product1.php"><span class="overlay">
+                    <a href="product1.php?pid=p1"><span class="overlay">
                         <span class="text">View</span>
                       </span>
                     </a>
@@ -131,7 +128,7 @@
             <div class="item">
                 <div class="image-container">
                     <img src="../img/chai-tea.png" alt="Chai Tea container" class="image">
-                    <a href="product3.php"><span class="overlay">
+                    <a href="product3.php?pid=p3"><span class="overlay">
                         <span class="text">View</span>
                     </a>
                 </div>
@@ -145,7 +142,7 @@
             <div class="item">
                 <div class="image-container">
                     <img src="../img/oolong.png" alt="Oolong Tea goodness!" class="image">
-                    <a href="product4.php"><span class="overlay">
+                    <a href="product4.php?pid=p4"><span class="overlay">
                         <span class="text">View</span>
                       </span>
                     </a>
@@ -161,7 +158,7 @@
             <div class="item">
                 <div class="image-container">
                     <img src="../img/darjeeling.png" alt="Have some Darjeeling" class="image">
-                    <a href="product5.php"><span class="overlay">
+                    <a href="product5.php?pid=p5"><span class="overlay">
                         <span class="text">View</span>
                       </span>
                     </a>
@@ -176,6 +173,11 @@
         </div>
     </main>
     <footer>
+        <hr>
+        Katies Truong s3671053
     </footer>
+    <?php
+        include_once("/home/eh1/e54061/public_html/wp/debug.php");
+    ?>
 </body>
 </html>

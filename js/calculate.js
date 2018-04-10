@@ -1,6 +1,6 @@
-
+// Note, this can only apply to the first input, I've done for loops and if statements, they don't seem to work.
 //increment the values
-function plus(value){
+function plus(){
     var value = parseInt(document.getElementById("pid").value);
     // if value is not a value return 
     value = isNaN(value) ? 0 : value;
@@ -9,7 +9,7 @@ function plus(value){
 }
 
 // decrement the values IF a positive integer
-function minus(value) {
+function minus() {
     var value = parseInt(document.getElementById("pid").value);
     value = isNaN(value) ? 0 : value;
     // if value is less than the first number, being 0, pass it as zero or have it empty
@@ -28,8 +28,4 @@ value.onkeydown = function(e) {
        || e.keyCode == 8)){
            return false;
        }
-}
-
-function updateSubTotal(value) {
-    var value
 }

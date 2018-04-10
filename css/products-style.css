@@ -6,8 +6,7 @@ html, body {
 
 /* Navigation styling starts here*/
 #nav-logo {
-    width: 7%;
-    height: 7%;
+    width: 8%;
     display: inline-flex;
     float: left;
     margin: 10px auto 20px;
@@ -106,41 +105,6 @@ li {
     background: #999;
 }
 
-#logo-panel {
-   margin: 0;
-   background-image: url('../img/cover-background-darker.png');
-   width: 100%;
-   max-height: none;
-   min-height: 1200px;
-   z-index: 1;
-   background-position: center;
-   background-size: cover;
-   position: relative;
-}
-
-#logo-panel img {
-    height: 50%;
-    width: 50%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#main-logo {
-    height: 80%;
-    width: 80%;
-    margin: auto;
-    padding: 0px 80px;
-    position: relative;
-    box-sizing: border-box;
-    display: block;
-}
-
-#main-logo img {
-    display: block;
-    margin: 150px auto 0;
-}
-
 h1 {
     font-family: 'Montserrat', serif;
     color: #fff;
@@ -229,4 +193,17 @@ p::-moz-selection {
     border: solid #fff 2px;
     border-radius: 2px;
     padding: 10px;
+}
+
+footer {
+    padding: 100px;
+    font-family: 'Signika', sans-serif;
+    background-color: #1b1b1b;
+    color: #fff;
+    clear: both;
+    font-size: 20px;
+}
+
+footer > a {
+    color: #9d6325;
 }

@@ -60,6 +60,8 @@
             </div>
     </main>
     <footer>
+        <hr>
+        Katies Truong s3671053 2018
     </footer>
 </body>
 </html>

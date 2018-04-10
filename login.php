@@ -47,6 +47,8 @@
         </div>
     </main>
     <footer>
+        <hr>
+        Katies Truong s3671053
     </footer>
 </body>
 <script src="validate-form.js"></script>
