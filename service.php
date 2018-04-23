@@ -1,13 +1,9 @@
-<?php
-    session_start();
-    include_once("/home/eh1/e54061/public_html/wp/debug.php");
-?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Login Page</title>
-    <link rel="stylesheet" type="text/css" href="service-style.css">
+    <link rel="stylesheet" type="text/css" href="css/service-style.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,900|Signika" rel="stylesheet">    
 </head>
 <body>
@@ -61,7 +57,7 @@
     </main>
     <footer>
         <hr>
-        Katies Truong s3671053 2018
+        Katies Truong 2018
     </footer>
 </body>
 </html>

@@ -47,7 +47,7 @@ and only applies for the first element, black tea -->
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, inital-scale=1">
     <title>Product</title>
-    <link rel="stylesheet" type="text/css" href="product-style.css">
+    <link rel="stylesheet" type="text/css" href="css/product-style.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:300|Signika" rel="stylesheet">
 </head>
 <body>
@@ -114,12 +114,9 @@ and only applies for the first element, black tea -->
     </main>
     <footer>
         <hr>
-        Katies Truong s3671053
+        Katies Truong 2018
         <a href="products.csv">Products Spreadsheet</a>
     </footer>
-    <?php
-        include_once("/home/eh1/e54061/public_html/wp/debug.php");
-    ?>
 </body> 
 <!--Calculate.js is deprecated since buttons with 3 items is difficult to maintain through js-->
 <script src="calculate.js"></script>

@@ -1,7 +1,3 @@
-<?php
-    session_start();
-    include_once("/home/eh1/e54061/public_html/wp/debug.php");
-?>
 <!--This webpage is incomplete and is only seen as a markup-->
 <!DOCTYPE html>
 <html>
@@ -51,7 +47,7 @@
                     <h2>Feta Cheese Salad</h2>
                     <img class="img-content" src="../img/feta-cheese-salad.jpeg" alt="Image of a nice cool feta cheese salad">
                     <p>$12.50</p>
-                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
+                    <form action="" method="post">
                     <input type="hidden" name="id" value="lu1">
                     <input name="qty" type="button" value="+">
                     </form>
@@ -60,7 +56,7 @@
                     <h2>Chia Pudding</h2>
                     <img class="img-content" src="../img/chia-pudding.jpeg" alt="A bowl full of chia pudding with yogurt">
                     <p>$13.20</p>
-                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
+                    <form action="" method="post">
                     <input type="hidden" name="id" value="lu2">
                     <input name="qty" type="button" value="+">
                     </form>
@@ -69,7 +65,7 @@
                     <h2>Banana Crust</h2>
                     <img class="img-content" src="../img/banana-crust.jpeg" alt="Image of toast topped with cherry tomatoes, boiled eggs and banana side dishes">
                     <p>$10</p>
-                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
+                    <form action="" method="post">
                     <input type="hidden" name="id" value="lu3">
                     <input name="qty" type="button" value="+">
                     </form>
@@ -91,7 +87,7 @@
                     <h2>Eggs and Bacon</h2>
                     <img class="img-content" src="../img/eggs-bacon.jpeg" alt="Overhead shot of a dish of eggs with bacon on the side">
                     <p>$13.20</p>
-                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
+                    <form action="" method="post">
                     <input type="hidden" name="id" value="di2">
                     <input name="qty" type="button" value="+">
                     </form>
@@ -100,7 +96,7 @@
                     <h2>Brekkie Hotpot</h2>
                     <img class="img-content" src="../img/brekkie-hotpot.jpeg" alt="Image of warm brekkie hotpot filled with tomatoes and eggs and bread slices as a side">
                     <p>$15</p>
-                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
+                    <form action="" method="post">
                     <input type="hidden" name="id" value="di3">
                     <input name="qty" type="button" value="+">
                     </form>
@@ -109,7 +105,7 @@
                     <h2>Feta Pasta</h2>
                     <img class="img-content" src="../img/pasta.jpg" alt="Pasta is filled with olives, romana tomatoes and feta cheese">
                     <p>$14.30</p>
-                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
+                    <form action="e" method="post">
                     <input type="hidden" name="id" value="di4">
                     <input name="qty" type="button" value="+">
                     </form>
@@ -124,7 +120,7 @@
                     <h2>Indigo Warrior</h2>
                     <img class="img-content" src="../img/indigo-warrior.jpeg" alt="Berry smoothie blended with blueberries, strawberries and raspberries">
                     <p>$6</p>
-                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
+                    <form action="" method="post">
                     <input type="hidden" name="id" value="dr1">
                     <input name="qty" type="button" value="+">
                     </form>
@@ -133,7 +129,7 @@
                     <h2>Acai Smoothie</h2>
                     <img class="img-content" src="../img/acai-smoothie.jpeg" alt="Smoothie jar mixed with chocolate goodness topped with nuts, acai berries, strawberries and kiwi">
                     <p>$8</p>
-                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
+                    <form action="" method="post">
                     <input type="hidden" name="id" value="dr2">
                     <input name="qty" type="button" value="+">
                    </form> 
@@ -142,7 +138,7 @@
                     <h2>Watermelon Shake</h2>
                     <img class="img-content" src="../img/watermelon-shake.jpeg" alt="Chilled watermelon smoothie blended in watermelon juice and ice">
                     <p>$5</p>
-                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
+                    <form action="" method="post">
                     <input type="hidden" name="id" value="dr3">
                     <input name="qty" type="button" value="+">
                     </form>
@@ -151,7 +147,7 @@
                     <h2>Tooty Fruity</h2>
                     <img class="img-content" src="../img/tooty-fruity.jpg" alt="Image of a strawberry smoothie">
                     <p>$6</p>
-                    <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=service" method="post">
+                    <form action="" method="post">
                     <input type="hidden" name="id" value="dr4">
                     <input name="qty" type="button" value="+">
                     </form>    
@@ -162,6 +158,6 @@
 </body>
 <footer>
     <hr>
-    Katies Truong s3671053 2018
+    Katies Truong 2018
 </footer>
 </html>

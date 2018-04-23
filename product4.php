@@ -119,12 +119,9 @@ and only applies for the first element, black tea -->
     </main>
     <footer>
         <hr>
-        Katies Truong s3671053
+        Katies Truong 2018
         <a href="products.csv">Products Spreadsheet</a>
     </footer>
-    <?php
-        include_once("/home/eh1/e54061/public_html/wp/debug.php");
-    ?>
 </body>
 <!--Calculate.js is deprecated since buttons with 3 items is difficult to maintain through js-->
 <script src="calculate.js"></script>

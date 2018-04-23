@@ -74,10 +74,7 @@
 </body>
 <footer>
     <hr>
-    Katies Truong s3671053 2018
+    Katies Truong 2018
     <a href='orders.csv'>Orders Spreadsheet</a>
 </footer>
-<?php
-    include_once("/home/eh1/e54061/public_html/wp/debug.php");
-?>
 </html>

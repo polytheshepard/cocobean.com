@@ -35,6 +35,7 @@ nav ul {
    font-size: 30px;
    margin-bottom: 5em;
    width: 100%;
+   padding-bottom: 8%;
 }
 
 nav ul:first-of-type {
@@ -106,7 +107,7 @@ li {
 
 #logo-panel {
    margin: 0;
-   background-image: url('../img/cover-background-darker.png');
+   background-image: url('../img/menu/lunch-table.jpg');
    width: 100%;
    max-height: none;
    min-height: 1200px;
@@ -117,7 +118,8 @@ li {
 }
 
 #logo-panel img {
-    height: 60%;
+    height: 40%;
+    width: 40%;
     display: block;
     margin-right: auto;
     margin-left: auto;

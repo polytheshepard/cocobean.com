@@ -1,13 +1,9 @@
-<?php
-    session_start();
-    include_once("/home/eh1/e54061/public_html/wp/debug.php");
-?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, inital-scale=1">
-    <title>Assignment 2</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Coco Bean Homepage</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:300|Signika" rel="stylesheet">
     <script src="https://use.fontawesome.com/d71358d53b.js"></script>
 </head>
@@ -15,7 +11,7 @@
     <header>
         <nav id="main-nav">
             <div id="logo-panel">
-                <span id="nav-logo"><img src="../img/kaffe-logo-nav.png" alt="The KAFFÉ logo is displayed with the navigation bar"></span>
+                <span id="nav-logo"><img src="img/cocobean-transparent.png" alt="The Coco Bean logo is displayed with the navigation bar"></span>
 	                <ul>
 	                    <li><a href="index.php">Home</a></li>
                         <li><a href="products.php">Shop<i class="fa fa-sort-desc"></i></a>
@@ -31,18 +27,18 @@
                         <li><a href="cart.php">Cart</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                    <img id="main-logo" src="../img/kaffe-logo-revamped.png" alt="The KAFFÉ logo">
+                    <img id="main-logo" src="img/cocobean-transparent.png" alt="The Coco Bean logo">
             </div>
         </nav>
     </header>
     <!--Note to self: will update menu image soon and add delivery services afterwards. Will separate coffee and tea shop when A3 comes along to products1.php and products2.php-->
     <main>
-        <h1>Welcome to KAFFE</h1>
+        <h1>Welcome to Coco Bean</h1>
         <div id="main-info">
-            <p>KAFFE is a specialty coffee shop serving the best urban dishes along the Boulevarde. We roast the highest quality beans ranging from Columbia, Africa and eco-friendly coffee.</p>
+            <p>Coco Bean is a specialty coffee shop serving the best urban dishes along the Boulevarde. We roast the highest quality beans ranging from Columbia, Africa and eco-friendly coffee.</p>
             <p>We take special care of our coffee beans enriching the darkest aromas served with the palette to your warming dishes.</p>
             <p>Our purpose is to entrust meaning to our customer's love for coffee artistry. We value the environment as much as you do, as one of our biggest trademark
-               we've decided to go through the sustainable road. As part of our ethos, for every coffee cup you buy at KAFFE, 50 cents will go to a community fundraising campaign.</p>
+               we've decided to go through the sustainable road. As part of our ethos, for every coffee cup you buy at Coco Bean, 50 cents will go to a community fundraising campaign.</p>
             <p>Feel free to look at our special handcrafted coffee and tea blends in our shop today.</p>
         </div>
         <a href="products.php"><input id="browse-button" type="button" value="Browse shop"></a>
@@ -50,7 +46,7 @@
         </div>
     </main>
     <footer>
-        Katies Truong s3671053 2018
+        Katies Truong 2018
     </footer>
 </body>
 </html>

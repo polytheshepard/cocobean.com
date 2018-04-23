@@ -80,7 +80,7 @@
 <body>
     <header>
         <nav id="main-nav">
-            <img id="nav-logo" src="../img/kaffe-logo-nav.png" alt="The KAFFÉ logo is displayed with the navigation bar">
+            <img id="nav-logo" src="img/kaffe-logo-nav.png" alt="The logo is displayed with the navigation bar">
 	            <ul>
 	                <li><a href="index.php">Home</a></li>
                     <li><a href="products.php">Shop<i class="fa fa-sort-desc"></i></a>
@@ -148,9 +148,6 @@
 </body>
 <footer>
     <hr>
-    Katies Truong s3671053 2018
+    Katies Truong 2018
 </footer>
-<?php
-    include_once("/home/eh1/e54061/public_html/wp/debug.php");
-?>
 </html>

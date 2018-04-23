@@ -255,9 +255,6 @@
 <script src='visa-check-v2.js'></script>
 <footer>
     <hr>
-    Katies Truong s3671053 2018
+    Katies Truong 2018
 </footer>
-<?php
-    include_once("/home/eh1/e54061/public_html/wp/debug.php");
-?>
 </html>
