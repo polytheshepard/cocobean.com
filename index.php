@@ -11,7 +11,7 @@
     <header>
         <nav id="main-nav">
             <div id="logo-panel">
-                <span id="nav-logo"><img src="img/cocobean-transparent.png" alt="The Coco Bean logo is displayed with the navigation bar"></span>
+                <span id="nav-logo"><img src="img/cocobean-nav.png" alt="The Coco Bean logo is displayed with the navigation bar"></span>
 	                <ul>
 	                    <li><a href="index.php">Home</a></li>
                         <li><a href="products.php">Shop<i class="fa fa-sort-desc"></i></a>
@@ -27,7 +27,7 @@
                         <li><a href="cart.php">Cart</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                    <img id="main-logo" src="img/cocobean-transparent.png" alt="The Coco Bean logo">
+                    <img id="main-logo" src="img/cocobean-nav.png" alt="The Coco Bean logo">
             </div>
         </nav>
     </header>

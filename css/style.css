@@ -32,10 +32,11 @@ nav ul {
    color: #1b1b1b;
    padding: 30px;
    text-decoration: none;
-   font-size: 30px;
+   font-size: 40px;
    margin-bottom: 5em;
    width: 100%;
-   padding-bottom: 8%;
+   padding-bottom: 4%;
+   background-color: rgba(27, 27, 27, 0.7);
 }
 
 nav ul:first-of-type {
@@ -80,6 +81,7 @@ li {
     color: #1b1b1b;
     cursor: pointer;
     transition: .5s;
+    line-height: 95px;
 }
 
 #main-nav ul ul {
@@ -115,6 +117,7 @@ li {
    background-position: center;
    background-size: cover;
    position: relative;
+   background-attachment: fixed;
 }
 
 #logo-panel img {
@@ -193,4 +196,8 @@ footer > a {
         height: 80%;
         width: 80%;
     }
+}
+
+@media screen and (max-width: 600px) {
+    
 }
