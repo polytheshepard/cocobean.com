@@ -155,9 +155,9 @@ p::-moz-selection {
     width: 100%;
 }
 
-.image {
+.image-item {
     display: block;
-    width: 100%;
+    width: 80%;
     height: auto;
     margin-left: 100px;
 }

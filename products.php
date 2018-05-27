@@ -1,14 +1,20 @@
 <!--Note Coffee products are not included within the cart array, the tea products are the only items so far that are processed 
 and only applies for the first element, black tea -->
 <?php
-    session_start();
+    require_once 'core/init.php';
+    
+    $sql_coffee = "SELECT * FROM products WHERE categories = 1 ORDER BY id ASC";
+    $products = $db->query($sql_coffee);
+
+    $sql_tea = "SELECT * FROM products WHERE categories = 2 ORDER BY id ASC";
+    $products_2 = $db->query($sql_tea);
 ?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, inital-scale=1">
     <title>Shop</title>
-    <link rel="stylesheet" type="text/css" href="products-style.css">
+    <link rel="stylesheet" type="text/css" href="css/products-style.css">
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat|Signika" rel="stylesheet">
 </head>
 <body>
@@ -36,140 +42,39 @@ and only applies for the first element, black tea -->
         <h1>Shop</h1>
         <!--Coffee Blends-->
         <div class="item-list">
+        <?php while($p_coffee = mysqli_fetch_assoc($products)) : ?>
           <div class="item">
               <div class="image-container">
-                  <img src="../img/espresso-blend.png" alt="Image of Espresso blend coffee beans" class="image">
+                  <img src="<?= $p_coffee['image']?>" alt="Image of Espresso blend coffee beans" class="image-item">
                   <a href="product6.php?pid=p6"><span class="overlay">
                       <span class="text">View</span>
                     </span>
                   </a>
               </div>
               <div class="item-description">
-                  <h2 class="item-title">Espresso Blend</h2>
-                  <p class="item-para">A flavoursome and nutty taste that comes as a common specialty for coffee artistry. This Espresso blend is specifically sourced
-                  from Central America.</p>
-                  <p class="item-para">Price: $13</p>
+                  <h2 class="item-title"><?= $p_coffee['title']; ?></h2>
+                  <p class="item-para"><?= $p_coffee['description']; ?></p>
+                  <p class="item-para">Price: $<?= $p_coffee['price']; ?></p>
               </div>
           </div>
-          <div class="item">
-              <div class="image-container">
-                  <img src="../img/columbia.png" alt="Image of a Columbian coffee beans" class="image">
-                  <a href="product7.php?pid=p7"><span class="overlay">
-                      <span class="text">View</span>
-                    </span>
-                  </a>
-              </div>
-              <div class="item-description">
-                  <h2 class="item-title">Columbia</h2>
-                  <p class="item-para">Residing from Columbia, this particular blend is mixed in a citrus-like flavour with a fruity tone with the coffee bean oils.</p>
-                  <p class="item-para">Price: $15</p>
-              </div>
-          </div>
-          <div class="item">
-              <div class="image-container">
-                  <img src="../img/africano.png" alt="Image of Africano coffee beans" class="image">
-                  <a href="product8.php?pid=p8"><span class="overlay">
-                      <span class="text">View</span>
-                    </span>
-                  </a>
-              </div>
-              <div class="item-description">
-                  <h2 class="item-title">Africano</h2>
-                  <p class="item-para">Wet pressed from Uganda, they consist of dark and rich aromas satisfying a stronger taste for coffee lovers.</p>
-                  <p class="item-para">Price: $14 </p>
-              </div>
-          </div>
-          <div class="item">
-              <div class="image-container">
-                  <img src="../img/fairtrade.png" alt="Image of Fairtrade coffee beans" class="image">
-                  <a href="product9.php?pid=p9"><span class="overlay">
-                      <span class="text">View</span>
-                    </span>
-                  </a>
-              </div>
-              <div class="item-description">
-                  <h2 class="item-title">Fairtrade</h2>
-                  <p class="item-para">Organically sourced from Peru, the ideal flavour is grown in the high altitudes of Peru.
-                  It has a softer flavour and body with a gentler nutty flavour to its beans.</p>
-                  <p class="item-para">Price: $15</p>
-              </div>
-          </div>
+        <?php endwhile; ?>
             <!--Tea Assortments-->
+            <?php while($p_tea = mysqli_fetch_assoc($products_2)): ?>
             <div class="item">
                 <div class="image-container">
-                    <img src="../img/earl-grey.png" alt="Earl Grey container" class="image">
+                    <img src="<?= $p_tea['image']; ?>" alt="Earl Grey container" class="image-item">
                     <a href="product2.php?pid=p2"><span class="overlay">
                         <span class="text">View</span>
                       </span>
                     </a>
                 </div>
                 <div class="item-description">
-                    <h2 class="item-title">Earl Grey</h2>
-                    <p class="item-para">Black tea that is enriched with the oils from the bergamot orange rind.</p>
-                    <p class="item-para">Price: $10</p>
+                    <h2 class="item-title"><?= $p_tea['title']; ?></h2>
+                    <p class="item-para"><?= $p_tea['description']; ?></p>
+                    <p class="item-para">Price: $<?= $p_tea['price']; ?></p>
                 </div>
             </div>
-            <div class="item">
-                <div class="image-container">
-                    <img src="../img/english-breakfast.png" alt="English Breakfast container" class="image">
-                    <a href="product1.php?pid=p1"><span class="overlay">
-                        <span class="text">View</span>
-                      </span>
-                    </a>
-                </div>
-                <div class="item-description">
-                    <h2 class="item-title">English Breakfast</h2>
-                    <p class="item-para">One of the most popular tea blends, most commonly associated with British tea culture. Its robust and rich black tea leaves
-                        works well with milk and sugar.
-                    </p>
-                    <p class="item-para">Price: $10</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="image-container">
-                    <img src="../img/chai-tea.png" alt="Chai Tea container" class="image">
-                    <a href="product3.php?pid=p3"><span class="overlay">
-                        <span class="text">View</span>
-                    </a>
-                </div>
-                    <div class="item-description">
-                    <h2 class="item-title">Chai Tea</h2>
-                    <p class="item-para">Commonly known as masala chai that is black tea mixed with aromatic Indian
-                        spices and herbs.</p>
-                    <p class="item-para">Price: $12</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="image-container">
-                    <img src="../img/oolong.png" alt="Oolong Tea goodness!" class="image">
-                    <a href="product4.php?pid=p4"><span class="overlay">
-                        <span class="text">View</span>
-                      </span>
-                    </a>
-                </div>
-                <div class="item-description">
-                    <h2 class="item-title">Oolong</h2>
-                    <p class="item-para">Traditional Chinese tea that is oxidised from sun heat. It consists both of
-                        green and black tea leaves giving life-long health benefits.
-                    </p>
-                    <p class="item-para">Price: $12</p>
-                </div>
-            </div>
-            <div class="item">
-                <div class="image-container">
-                    <img src="../img/darjeeling.png" alt="Have some Darjeeling" class="image">
-                    <a href="product5.php?pid=p5"><span class="overlay">
-                        <span class="text">View</span>
-                      </span>
-                    </a>
-                </div>
-                <div class="item-description">
-                    <h2 class="item-title">Darjeeling</h2>
-                    <p class="item-para">Darjeeling resides in the northern region of India. Famously known as "The Champagne Tea",
-                        it consists of a combination of green, white and black tea leaves giving an exquisite taste. </p>
-                    <p class="item-para">Price: $14</p>
-                </div>
-            </div>
+            <?php endwhile; ?>
         </div>
     </main>
     <footer>

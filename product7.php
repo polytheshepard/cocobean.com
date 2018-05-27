@@ -83,7 +83,7 @@ and only applies for the first element, black tea -->
             </div>
             <p><strong>Body:</strong> Smooth<p>
             <p><strong>Flavour:</strong> Fruity, Nutty, Citrus-like</p>
-            <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post">
+            <form action="" method="post">
             <input type="hidden" name="pid" value="p7">
             <div class="coffee-options">
                 <label> Size
