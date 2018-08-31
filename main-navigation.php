@@ -17,5 +17,6 @@
                         <li><a href="cart.php" class="nav-highlight">Cart</a></li>
                         <li><a href="#" class="nav-highlight">Contact</a></li>
             </ul>
+            <img id="main-logo" src="img/logo/cocobean-logo.png" alt="The Coco Bean logo">
             </div>
 </nav>
