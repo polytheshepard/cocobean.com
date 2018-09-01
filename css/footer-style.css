@@ -1,0 +1,7 @@
+hr {
+    max-width: 45em;
+    height: 5px;
+    border-width: 2px;
+    border-color: #801920;
+    border-style: solid;
+}

@@ -9,7 +9,6 @@
 }
 
 nav {
-   padding-bottom: 10px;
    color: #fff;
    overflow: hidden;
 }
@@ -24,6 +23,7 @@ nav ul {
    padding-bottom: 4%;
    background-color: rgba(0, 0, 0, 0.795);
    position: fixed;
+   z-index: 1;
 }
 
 nav ul:first-of-type {

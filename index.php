@@ -12,35 +12,16 @@ $p_query = $db->query($sql);
     <meta charset="UTF-8" name="viewport" content="width=device-width, inital-scale=1">
     <title>Coco Bean Homepage</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:300|Signikai|Lora" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Signikai|Lora" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script async src="https://use.fontawesome.com/d71358d53b.js"></script>
-
 </head>
 <body>
     <header>
-        <nav id="main-nav">
-            <div id="logo-panel">
-            <!--<img id="nav-logo" src="img/logo/cocobean-nav.png" alt="The Coco Bean logo is displayed with the navigation bar">-->
-			<ul>
-			    <li><img id="nav-logo" src="img/logo/cocobean-nav.png" alt="The Coco Bean logo is displayed with the navigation bar"></li>
-	                    <li><a href="index.php" class="nav-highlight">Home</a></li>
-                        <li><a href="products.php" class="nav-highlight">Shop<i class="fa fa-sort-desc"></i></a>
-                            <ul>
-                                <li><a href="products.php">Coffee</a></li>
-                                <li><a href="products.php">Tea</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="login.php" class="nav-highlight">Login</a></li>
-	                    <li><a href="service.php" class="nav-highlight">Bookings</a></li>
-	                    <li><a href="#" class="nav-highlight">Menu</a></li>
-                        <li><a href="service2.php" class="nav-highlight">Delivery</a></li>
-                        <li><a href="cart.php" class="nav-highlight">Cart</a></li>
-                        <li><a href="#" class="nav-highlight">Contact</a></li>
-                    </ul>
-                    <img id="main-logo" src="img/logo/cocobean-logo.png" alt="The Coco Bean logo">
-            </div>
-        </nav>
+<?php 
+include 'main-navigation.php';
+?>
     </header>
     <main>
         <div id="heading">

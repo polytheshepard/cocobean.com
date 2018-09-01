@@ -14,8 +14,8 @@ and only applies for the first element, black tea -->
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, inital-scale=1">
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
-    <link rel="stylesheet" type="text/css" href="css/products-style.css">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat|Signika" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/shop-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Sorts+Mill+Goudy" rel="stylesheet">
     <title>Shop</title>
 </head>
 <body>
@@ -25,7 +25,11 @@ and only applies for the first element, black tea -->
          ?>
     </header>
     <main>
-        <h1>Shop</h1>
+    <div class="container">
+        <img id="image-banner"src="img/menu/coffee-art.jpg">
+        <h1 id="title" class="title-name">Shop</h1>
+        <h1 id="coffee-tea-title" class="title-name">Coffee<span id="serif-font">&</span>Tea</h1>
+    </div>
         <!--Coffee Blends-->
         <div class="item-list">
         <?php while($p_coffee = mysqli_fetch_assoc($products)) : ?>
