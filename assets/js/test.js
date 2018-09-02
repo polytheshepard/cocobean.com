@@ -1,0 +1,1 @@
+var test = parent.getElementsByClassName

@@ -1,0 +1,22 @@
+/* Import font families here  */
+@font-face {
+    font-family: 'ChunkFive-Regular';
+    src: 
+        url('../fonts/chunk-master/ChunkFive-Regular.ttf')
+        format('truetype'),
+        url('../fonts/chunk-master/ChunkFive-Regular.otf')
+        format('opentype'),
+        url('../fonts/chunk-master/webfonts/ChunkFive-Regular.woff')
+        format('woff'),
+        url('../fonts/chunk-master/webfonts/ChunkFive-Regular.woff2')
+        format('woff2');
+}
+
+@font-face {
+    font-family: 'Simplifica';
+    src:
+        url('../fonts/SIMPLIFICA/SIMPLIFICA Typeface.ttf')
+        format('truetype');
+}
+
+

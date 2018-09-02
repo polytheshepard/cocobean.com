@@ -1,0 +1,213 @@
+@import url("fonts.css");
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+#nav-logo {
+    width: 15%;
+    display: inline-flex;
+    margin: 10px auto -15px;
+    margin-left: 20px;
+    z-index: 1;
+}
+
+nav {
+   color: #fff;
+   overflow: hidden;
+}
+
+nav ul {
+   color: #1b1b1b;
+   padding: 30px;
+   text-decoration: none;
+   font-size: 40px;
+   margin-bottom: 5em;
+   width: 100%;
+   padding-bottom: 4%;
+   background-color: rgba(0, 0, 0, 0.795);
+   position: fixed;
+   z-index: 1;
+}
+
+nav ul:first-of-type {
+    border-bottom: 1px solid #fff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #821838;
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav:hover, nav:active {
+   color: #fff;
+   transition: 0.5s;
+}
+
+nav:link, nav:visited {
+    color: #fff;
+    transition: 0.5s;
+}
+
+nav:hover, nav a:hover, nav a:active {
+   color: #fff;
+   transition: 0.5s;
+}
+
+.nav-highlight {
+    color: #821838;
+    flex: 1;
+    background-image: linear-gradient(to right, #821838 0, #821838 100%);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background 0.5s;
+}
+
+.nav-highlight:hover {
+    background-size: 100% 100%;
+}
+
+
+ul {
+   text-decoration: none;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   word-spacing: 30px;
+   font-family: 'Signika', sans-serif;
+   font-size: 25px;
+   transition: .5s;
+}
+
+/* Applies to Shop link */
+li {
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    color: #1b1b1b;
+    cursor: pointer;
+    transition: .5s;
+    line-height: 95px;
+}
+
+#main-nav ul ul {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    top: 100%;
+}
+
+#main-nav ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+#main-nav li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    border-bottom: none;
+    background: #999;
+    margin-bottom: 5em;
+}
+
+.transition-background {
+	background-color: #000;
+	transition: 0.5s;
+}
+
+body input ~ nav {
+    background: #000;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    overflow: hidden;
+}
+
+input#burger {
+    display: none;
+}
+
+@media (max-width: 1300px) {
+    #nav-logo {
+        width: 25%;
+    }
+
+    nav ul {
+        background-color: #000;
+    }
+
+    nav#main-nav ul a {
+        opacity: 0;
+        display: none;
+        transition: 0.5s ease-out;
+        transition-delay: 0.3s;
+    }
+
+    /* Transitions the bruger menu icon */
+    body input + label span {
+        position: fixed;
+        width: 8%;
+        height: 10px;
+        top: 75px;
+        right: 3em;
+        display: block;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 5;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    body input + label span:first-child {
+        top: 50px;
+    }
+
+    body input + label span:last-child {
+        top: 100px;
+    }
+
+    body input:checked + label span {
+        opacity: 0;
+        top: 9%;
+    }
+
+    body input:checked + label span:first-child {
+        opacity: 1;
+        transform: rotate(405deg);
+    }
+
+    body input:checked + label span:last-child {
+        opacity: 1;
+        transform: rotate(-405deg);
+    }
+
+    body input:checked ~ nav ul {
+        background-color: #000;
+        padding-bottom: 1000px;
+        width: 100%;
+        z-index: 2000;
+        opacity: 1;
+    }
+
+    nav#main-nav > ul > li{
+        opacity: 0;
+        transition: 0.5s;
+        transition-delay: 0s;
+    }
+
+    body input:checked ~ nav#main-nav ul a, body input:checked ~ nav.nav-highlight ul a {
+        display: list-item;
+        transition: 0.5s ease-out;
+        transition-delay: 0.3s;
+        font-size: 40px;
+        margin-bottom: -27px;
+        opacity: 1;
+    }
+
+    #main-nav li:hover > ul {
+           
+    }
+}

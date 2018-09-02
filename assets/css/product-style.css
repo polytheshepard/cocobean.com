@@ -1,0 +1,214 @@
+@import url("navigation.css");
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+}
+
+body {
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    margin-left: 100px;
+    text-shadow: 2px 2px 2px #000;
+    clear: both;
+}
+
+
+img {
+    width: 20%;
+    margin-left: 100px;
+}
+
+.return-button {
+    height: 40px;
+    width: 100px;
+    margin-left: 100px;
+    margin-top: 20px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Signika', sans-serif;
+    cursor: pointer;
+    border: 3px solid #a34545;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+.return-button:hover, .return-button:active {
+    border: 3px solid #a34545;
+    background-color: #a34545;
+}
+
+.product-container {
+    box-sizing: border-box;
+    height: 200px;
+    width: 50%;
+}
+
+p {
+    color: #cccac8;
+    font-family: 'Signika', sans-serif;
+    font-size: 20px; 
+    float: left;
+    margin-left: 100px;
+}
+
+p::selection {
+    background: #580505;
+    color: #fff;
+}
+
+p::-moz-selection {
+    background: #580505;
+    color: #fff;
+}
+
+/* Formatting quantity box*/
+.decrease {
+    width: 50px;
+    height: 51px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Signika', sans-serif;
+    transition: .3s ease;
+}
+
+.decrease:active, .decrease:hover {
+    background-color: #580505;
+    cursor: pointer;
+}
+
+.increase {
+    width: 50px;
+    height: 51px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'Signika', sans-serif;
+    transition: .3s ease;
+}
+
+.increase:active, .increase:hover {
+    background-color: #580505;
+    cursor: pointer;
+}
+
+.product-amount {
+    width: 40px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Signika', sans-serif;
+    text-align: center;
+}
+
+.quantity-box {
+    display: inline-block;
+    border: 2px solid #580505;
+    border-radius: 2px;
+    margin-left: 100px;
+    box-sizing: border-box;
+    float: left;
+    vertical-align: middle;
+}
+
+/*Formatting drop-down options */
+.tea-options, .coffee-options {
+    font-family: 'Signika', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 30px;
+    float: left;
+}
+
+.tea-box, .size {
+    height: 30px;
+    display: inline-block;
+    border-radius: 2px;
+    font-family: 'Signika', sans-serif;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.add-button {
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    width: 60px;
+    border: 2px solid #580505;
+    background-color: #580505;
+    font-family: 'Signika', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 30px;
+    box-sizing: border-box;
+    float: left;
+    vertical-align: middle;
+}
+
+/* Formatting Bar for coffee and tea levels*/
+.caffeine-bar, .coffee-bar {
+    width: 50%;
+    background-color: #cccac8;
+    height: 30px;
+    float: left;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+.filled-caffeine-moderate, .filled-medium {
+    width: 50%;
+    height: 30px;
+    background-color: #580505;
+}
+
+.filled-caffeine-low {
+    width: 25%;
+    height: 30px;
+    background-color: #580505;
+}
+
+.filled-dark {
+    width: 75%;
+    height: 30px;
+    background-color: #580505;
+}
+
+span#subtotal-result {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    margin-left: 100px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+footer {
+    padding: 100px;
+    font-family: 'Signika', sans-serif;
+    background-color: #1b1b1b;
+    color: #fff;
+    clear: both;
+    font-size: 20px;
+}
+
+footer > a {
+    color: #9d6325;
+}

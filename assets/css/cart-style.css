@@ -1,0 +1,176 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #1b1b1b;
+}
+
+/*Navigation bar stylign starts here */
+#nav-logo {
+    width: 10%;
+    display: inline-flex;
+    float: left;
+    margin: 10px auto 20px;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+nav {
+   padding-bottom: 10px;
+   color: #fff;
+   overflow: hidden;
+   font-family: 'Signika', sans-serif;
+}
+
+nav ul {
+   color: #1b1b1b;
+   padding: 30px;
+   text-decoration: none;
+   font-size: 30px;
+   margin-bottom: 5em;
+   width: 100%;
+   background: #cccac8;
+}
+
+nav ul:first-of-type {
+    border-bottom: 1px solid #fff;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1b1b1b;
+}
+
+nav:hover, nav:active {
+   color: #9d6325;
+}
+
+nav:link, nav:visited {
+    color: #9d6325;
+}
+
+nav:hover, nav a:hover, nav a:active {
+   color: #9d6325;
+   transition: 0.5s;
+}
+
+ul {
+   text-decoration: none;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   word-spacing: 30px;
+   font-family: 'Signika', sans-serif;
+   font-size: 25px;
+   transition: .5s;
+}
+
+/* Applies to Shop link */
+li {
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    color: #1b1b1b;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#main-nav ul ul {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    top: 100%;
+}
+
+#main-nav ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+#main-nav li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    border-bottom: none;
+    background: #999;
+}
+
+/* Navigation bar styling ends here*/
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+img {
+    margin-left: 50px;
+}
+
+.item-container {
+    background-color: #cccac8;
+    height: 30%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#button-container {
+    text-align: center;
+}
+
+.cart-button {
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    border: 2px solid #580505;
+    background-color: #580505;
+    font-family: 'Signika', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 30px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 1px #000;
+}
+
+footer {
+    padding: 100px;
+    font-family: 'Signika', sans-serif;
+    background-color: #1b1b1b;
+    color: #fff;
+    clear: both;
+    font-size: 20px;
+}
+
+footer > a {
+    color: #9d6325;
+}
