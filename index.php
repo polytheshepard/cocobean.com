@@ -11,8 +11,8 @@ $p_query = $db->query($sql);
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, inital-scale=1">
     <title>Coco Bean Homepage</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/navigation.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Signikai|Lora" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script async src="https://use.fontawesome.com/d71358d53b.js"></script>
@@ -39,23 +39,23 @@ include 'main-navigation.php';
         <!-- Showcase different options -->
         <div class="row">
             <div class="column">
-                <img src="img/menu/antipasti.jpg" alt="">
+                <img src="assets/img/menu/antipasti.jpg" alt="">
             </div>
             <div class="column">
-                <img src="img/menu/coffee-cup.jpg" alt="">
+                <img src="assets/img/menu/coffee-cup.jpg" alt="">
             </div>
             <div class="column">
-                <img src="img/menu/delivery.jpg" alt="">
+                <img src="assets/img/menu/delivery.jpg" alt="">
             </div>
             <div class="column">
-                <img src="img/menu/cafe-booking.jpg" alt="">
+                <img src="assets/img/menu/cafe-booking.jpg" alt="">
             </div>
         </div>
     </main>
     <footer>
         Katies Truong 2018
     </footer>
-
-    <script src="js/nav-scroll.js"></script>
+    <script src="assets/js/nav-fade.js"></script>
+    <script src="assets/js/nav-scroll.js"></script>
 </body>
 </html>

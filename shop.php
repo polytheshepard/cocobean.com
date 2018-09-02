@@ -13,9 +13,10 @@ and only applies for the first element, black tea -->
 <html>
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, inital-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/navigation.css">
-    <link rel="stylesheet" type="text/css" href="css/shop-style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/shop-style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Sorts+Mill+Goudy" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <title>Shop</title>
 </head>
 <body>
@@ -26,7 +27,7 @@ and only applies for the first element, black tea -->
     </header>
     <main>
     <div class="container">
-        <img id="image-banner"src="img/menu/coffee-art.jpg">
+        <img id="image-banner"src="assets/img/menu/coffee-art.jpg">
         <h1 id="title" class="title-name">Shop</h1>
         <h1 id="coffee-tea-title" class="title-name">Coffee<span id="serif-font">&</span>Tea</h1>
     </div>
@@ -71,5 +72,7 @@ and only applies for the first element, black tea -->
         <hr>
         Katies Truong 2018
     </footer>
+    <script src="assets/js/nav-fade.js"></script>
+    <script src="assets/js/nav-scroll.js"></script>
 </body>
 </html>
